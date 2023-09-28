@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header component Styling */
+header {
+  background-color: #8e8d8a;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  color: white;
+}
+header h1 span {
+  color: orange;
+}
+
+/* Main App component Styling */
+#main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main .settingSideBar {
+  width: 35%;
+  height: 100%;
+  background-color: #eae7dc;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-right: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ControlBox,
+.colorcontrolBox {
+  width: 100%;
+  border-bottom: 1px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 40%;
+}
+.Box {
+  width: 100%;
+  height: 11%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em;
+  gap: 1em;
+}
+.Box label {
+  font-weight: bold;
+  font-size: 18px;
+}
+.Box input[type="range"] {
+  width: 35%;
+}
+.colorcontrolBox {
+  height: 20%;
+}
+
+#main .outPutSide {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+}
+#main .outPutSide #Result {
+border: 2px solid orange;
+  width: 300px;
+  height: 300px;
+}
+ #Code {
+  border-bottom: 2px solid orange;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background-color: #eae7dc;
+  color: orange;
+}
+#Code p{
+  font-weight: bold;
+  word-spacing: 10px;
+}
+
+/* Footer Component Styling */
+footer {
+  height: 7vh;
+  background-color: #8e8d8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+footer p {
+  color: white;
+}
+footer p {
+  color: orange;
+  font-size: 20px;
+  word-spacing: 10px;
+  font-weight: 500;
+}
+footer p span {
+  font-size: 25px;
+}
+
+/* Responsive Style */
+@media (max-width: 1023px){
+  
+  /* Main App component Styling */
+  #main {
+    border: 2px solid red;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 150vh;
+  }
+  #main .settingSideBar {
+    border: 2PX SOLID red;
+    height: 55%;
+    width: 100%;
+  }
+  #main .outPutSide {  border: 2PX SOLID red;
+    height: 45%;
+    width: 100%;}
+  
+  .Box input[type="range"] {
+    width: 30%;
+  }
+  #Code p{
+    font-size: 12px;
+    word-spacing: 5px;
+  }
+  
+  /* Footer Component Styling */
+
+  footer p {
+    font-size: 10px;
+    word-spacing: normal;
+    font-weight: bolder;
+  }
+  footer p span {
+    font-size: 15px;
+  }
+
+}
