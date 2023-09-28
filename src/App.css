@@ -126,17 +126,15 @@ footer p span {
   
   /* Main App component Styling */
   #main {
-    border: 2px solid red;
     flex-direction: column-reverse;
     justify-content: center;
     height: 150vh;
   }
   #main .settingSideBar {
-    border: 2PX SOLID red;
     height: 55%;
     width: 100%;
   }
-  #main .outPutSide {  border: 2PX SOLID red;
+  #main .outPutSide { 
     height: 45%;
     width: 100%;}
   
